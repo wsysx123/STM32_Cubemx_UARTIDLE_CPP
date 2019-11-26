@@ -4,10 +4,7 @@ cubemx构建的原始工程，其中包含DMA空闲中断实现的不定长串�
 # 注意
 
 Keil工程设置中，C/C++选项卡内C99 Mode去掉，然后Misc Controls内加入--cpp11
-<<<<<<< HEAD
 
-=======
->>>>>>> ef19495f4f077b4511e6b45cdad0ece1be0a0d60
 Target内Use MicroLIB选项去掉
 
 # 如果不能运行
