@@ -123,12 +123,6 @@ int main(void)
   while (1)
   {
 		Uart1->SendData_DMA(str,12);
-		/*
-		if(Uart1->rx_len>0){
-			Uart1->SendData_DMA(Uart1->usartDMA_rxBuf,Uart1->rx_len);
-			Uart1->rx_len = 0;
-		}
-		*/
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

@@ -7,7 +7,6 @@
 MyUart *Uart1;
 
 MyUart::MyUart(UART_HandleTypeDef* inituart){
-//MyUart_Library::MyUart_Library(){
 	this->uart = inituart;
 	HAL_UART_Receive_DMA(this->uart, usartDMA_rxBuf, RECEIVELEN);
   __HAL_UART_ENABLE_IT(this->uart, UART_IT_IDLE); //使能空闲中断
@@ -31,7 +30,6 @@ void MyUart::SendData_DMA(uint8_t *pdata, uint16_t Length)
 
 void MyUart_Init(MyUart ** uart,UART_HandleTypeDef* inituart){
 	*uart = new MyUart(inituart);
-	//uart = new MyUart();
 }
 //DMA发送回调函数
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
